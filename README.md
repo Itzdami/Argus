@@ -16,18 +16,21 @@ Each port is scanned on its own thread, with results printed under a shared mute
 ## Usage
 
 Build:
-
+\`\`\`bash
 g++ main.cpp -o argus -pthread
+\`\`\`
 
 Run:
-
+\`\`\`bash
 ./argus <target_ip> <start_port> <end_port>
+\`\`\`
 
 Example:
-
+\`\`\`bash
 ./argus 127.0.0.1 1 1024
+\`\`\`
 
-DISCLAIMER!!
+## DISCLAIMER!!
 
 Only scan hosts you own or have explicit permission to test.
 Use against `127.0.0.1` your own local network,
